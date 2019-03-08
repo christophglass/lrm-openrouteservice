@@ -1,0 +1,33 @@
+{
+  "name": "lrm-openrouteservice",
+  "version": "1.0.0",
+  "description": "Leaflet Routing Machine / OpenRoute Service\r ===========================================",
+  "main": "src/L.Routing.OpenRouteService.js",
+  "dependencies": {
+    "corslite": "0.0.7",
+    "polyline": "^0.2.0"
+  },
+  "browserify-shim": {
+    "leaflet": "global:L"
+  },
+  "devDependencies": {
+    "browserify": "^16.2.3",
+    "browserify-shim": "^3.8.14",
+    "uglify-js": "^3.4.9"
+  },
+  "scripts": {
+    "dist": "./scripts/dist.sh",
+    "publish": "./scripts/publish.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christophglass/lrm-openrouteservice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christophglass/lrm-openrouteservice/issues"
+  },
+  "homepage": "https://github.com/christophglass/lrm-openrouteservice#readme"
+}

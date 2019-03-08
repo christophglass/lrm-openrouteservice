@@ -2,9 +2,9 @@
 	'use strict';
 
 	// Browserify
-	// var L = require('leaflet');
-	// var corslite = require('corslite');
-	// var polyline = require('polyline');
+	var L = require('leaflet');
+	var corslite = require('corslite');
+	var polyline = require('polyline');
 
 	L.Routing = L.Routing || {};
 
@@ -72,20 +72,20 @@
 
 		_routeDone: function (response, inputWaypoints, callback, context) {
 			var alts = [],
-			    waypoints,
-			    waypoint,
-			    coordinates,
-			    i, j, k,
-			    instructions,
-			    distance,
-			    time,
+				waypoints,
+				waypoint,
+				coordinates,
+				i, j, k,
+				instructions,
+				distance,
+				time,
 				leg,
 				steps,
 				step,
-			    maneuver,
-			    startingSearchIndex,
-			    instruction,
-			    path;
+				maneuver,
+				startingSearchIndex,
+				instruction,
+				path;
 
 			context = context || callback;
 
@@ -106,10 +106,10 @@
 				time = 0;
 				distance = 0;
 
-				for(j = 0; j < path.segments.length; j++) {
+				for (j = 0; j < path.segments.length; j++) {
 					leg = path.segments[j];
 					steps = leg.steps;
-					for(k = 0; k < steps.length; k++) {
+					for (k = 0; k < steps.length; k++) {
 						step = steps[k];
 						distance += step.distance;
 						time += step.duration;
@@ -188,5 +188,5 @@
 	};
 
 	// Browserify
-	// module.exports = L.Routing.OpenRouteService;
+	module.exports = L.Routing.OpenRouteService;
 })();
