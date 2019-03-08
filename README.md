@@ -1,7 +1,5 @@
-==================================================================================
 This is a fork of Leaflet Routing Machine / OpenRoute Service for private reasons.
 I dont maintain the origin project.
-==================================================================================
 
 Leaflet Routing Machine / OpenRoute Service
 ===========================================
